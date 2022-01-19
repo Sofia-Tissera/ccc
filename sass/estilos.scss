@@ -366,20 +366,23 @@ h2 span {
     grid-row: 5/7;
   }
 }
+
 // about me-------------
 
-h2 .yo{
-    text-align: center;
-    color: #e91963;
+h2 .yo {
+  text-align: center;
+  color: #e91963;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+  font-weight: 300;
+
+  span {
+    color: black;
     text-transform: uppercase;
-    padding-bottom: 3.5rem;
-    font-size: 4rem;
-    font-weight: 300;
-    span{
-        color: black;
-        text-transform: uppercase;
-    }
+  }
 }
+
 .yo::before,
 .yo::after {
   content: "";
@@ -390,46 +393,54 @@ h2 .yo{
   transform: scaleX(0);
   transition: all 0.5s;
 }
-.about .row{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    background-image: url(../img/marble-gda94c08e5_1920.jpg);
-    border-radius: 3px;
-    .image{
-        flex: 1 1 30px;
-    }
-    img{
-        width: 100%;
-        padding: 5px;
-    }
-    .content{
-        flex: 1 1 45rem;
-        padding: 2rem;
-        align-items: flex-start;
-    }
-    .content h3{
-        font-size: 22px;
-        color: black;
-    }
-    .content p{
-        font-size: 17px;
-        color: black;
-        padding: 2rem 0;
-        line-height: 1.8;
-    }
-    .btn{
-        display: inline-block;
-        padding: .9rem 3rem;
-        font-size: 17px;
-        color: #e91963;
-        background-color: lightslategray;
-        border-radius: 5%;
-        cursor: pointer;
-    }
-    .content a:hover{
-        color: black;
-    }
+
+.about .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url(../img/marble-gda94c08e5_1920.jpg);
+  border-radius: 3px;
+
+  .image {
+    flex: 1 1 30px;
+  }
+
+  img {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    align-items: flex-start;
+  }
+
+  .content h3 {
+    font-size: 22px;
+    color: black;
+  }
+
+  .content p {
+    font-size: 17px;
+    color: black;
+    padding: 2rem 0;
+    line-height: 1.8;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 17px;
+    color: #e91963;
+    background-color: lightslategray;
+    border-radius: 5%;
+    cursor: pointer;
+  }
+
+  .content a:hover {
+    color: black;
+  }
 
 }
 
@@ -783,6 +794,7 @@ em {
     text-align: center;
   }
 }
+
 // fin seccion contacto
 
 // inicio seccion servicios

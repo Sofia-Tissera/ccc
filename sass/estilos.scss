@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -118,6 +119,7 @@ nav ul li a:hover::after {
     transform: translateX(0);
   }
 }
+
 .menu-btn {
   position: absolute;
   top: 65px;
@@ -203,6 +205,7 @@ h2:hover::after {
     transform: translateX(0);
   }
 }
+
 @media only screen and (max-width: 729px) {
   .titulo {
     font-size: 30px;
@@ -249,6 +252,7 @@ h2:hover::after {
     margin: 30px auto;
   }
 }
+
 h2 {
   font-weight: 300;
   font-size: 50px;
@@ -325,6 +329,7 @@ h2 span {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media only screen and (min-width: 780px) {
   .item1 {
     grid-column: 1/2;
@@ -361,19 +366,20 @@ h2 span {
     grid-row: 5/7;
   }
 }
-h2 .yo {
-  text-align: center;
-  color: #e91963;
-  text-transform: uppercase;
-  padding-bottom: 3.5rem;
-  font-size: 4rem;
-  font-weight: 300;
-}
-h2 .yo span {
-  color: black;
-  text-transform: uppercase;
-}
+// about me-------------
 
+h2 .yo{
+    text-align: center;
+    color: #e91963;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+    font-weight: 300;
+    span{
+        color: black;
+        text-transform: uppercase;
+    }
+}
 .yo::before,
 .yo::after {
   content: "";
@@ -384,47 +390,47 @@ h2 .yo span {
   transform: scaleX(0);
   transition: all 0.5s;
 }
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(../img/marble-gda94c08e5_1920.jpg);
+    border-radius: 3px;
+    .image{
+        flex: 1 1 30px;
+    }
+    img{
+        width: 100%;
+        padding: 5px;
+    }
+    .content{
+        flex: 1 1 45rem;
+        padding: 2rem;
+        align-items: flex-start;
+    }
+    .content h3{
+        font-size: 22px;
+        color: black;
+    }
+    .content p{
+        font-size: 17px;
+        color: black;
+        padding: 2rem 0;
+        line-height: 1.8;
+    }
+    .btn{
+        display: inline-block;
+        padding: .9rem 3rem;
+        font-size: 17px;
+        color: #e91963;
+        background-color: lightslategray;
+        border-radius: 5%;
+        cursor: pointer;
+    }
+    .content a:hover{
+        color: black;
+    }
 
-.about .row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  background-image: url(../img/marble-gda94c08e5_1920.jpg);
-  border-radius: 3px;
-}
-.about .row .image {
-  flex: 1 1 30px;
-}
-.about .row img {
-  width: 100%;
-  padding: 5px;
-}
-.about .row .content {
-  flex: 1 1 45rem;
-  padding: 2rem;
-  align-items: flex-start;
-}
-.about .row .content h3 {
-  font-size: 22px;
-  color: black;
-}
-.about .row .content p {
-  font-size: 17px;
-  color: black;
-  padding: 2rem 0;
-  line-height: 1.8;
-}
-.about .row .btn {
-  display: inline-block;
-  padding: 0.9rem 3rem;
-  font-size: 17px;
-  color: #e91963;
-  background-color: lightslategray;
-  border-radius: 5%;
-  cursor: pointer;
-}
-.about .row .content a:hover {
-  color: black;
 }
 
 .slogan-page {
@@ -464,10 +470,12 @@ h2 .yo span {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 .tittle-suscribe {
   display: flex;
   justify-content: center;
@@ -578,11 +586,13 @@ footer ul {
     padding: 30px;
   }
 }
+
 @media (max-width: 574px) {
   .footer-col {
     width: 100%;
   }
 }
+
 /* inicio sección contacto */
 .header-cnt {
   width: 100%;
@@ -661,6 +671,7 @@ footer ul {
     transform: translateX(0);
   }
 }
+
 em {
   font-size: 20px;
   margin-left: 10px;
@@ -724,7 +735,7 @@ em {
   }
 
   .contacto::before,
-.contacto::after {
+  .contacto::after {
     content: "";
     position: absolute;
     width: 97%;
@@ -746,7 +757,7 @@ em {
   }
 
   .contacto:hover::before,
-.contacto:hover::after {
+  .contacto:hover::after {
     transform: scaleX(1);
   }
 
@@ -755,6 +766,7 @@ em {
       transform: translateX(0);
     }
   }
+
   em {
     font-size: 20px;
     margin-left: 10px;
@@ -771,5 +783,6 @@ em {
     text-align: center;
   }
 }
+// fin seccion contacto
 
-/*# sourceMappingURL=estilos.css.map */
+// inicio seccion servicios

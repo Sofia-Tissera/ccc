@@ -798,3 +798,45 @@ em {
 // fin seccion contacto
 
 // inicio seccion servicios
+
+.header-serv {
+  width: 100%;
+  height: auto;
+  background-image: url(../img/marble-gda94c08e5_1920.jpg);
+  background-size: cover;
+}
+.heading{
+  font-size: 50px;
+  font-weight: 300;
+  span{
+    color: #e91963;
+  }
+}
+.productos{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.productos .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 5rem;
+}
+.productos .box-container .box .icons a{
+  height: 10px;
+  width: 40px;
+  line-height: 10rem;
+  font-size: 20px;
+  border: rgb(37, 35, 35);
+  color: #e91963;
+  margin: 0.3rem;
+}
+.productos .box-container .box .icons a:hover{
+  background: black;
+}
+.productos .box-container .box .image{
+  padding: 2.5rem 0;
+}
+.productos .box-container .box .image img{
+  height: 25rem;
+}

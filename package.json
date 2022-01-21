@@ -1,0 +1,23 @@
+{
+  "name": "procc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss:css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "sass": "sass -w --style=compressed --color --no-sourse-map scss/estilos.scss:css/estilos.css"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sofia-Tissera/ccc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sofia-Tissera/ccc/issues"
+  },
+  "homepage": "https://github.com/Sofia-Tissera/ccc#readme"
+}

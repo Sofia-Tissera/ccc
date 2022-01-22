@@ -163,7 +163,7 @@ section {
   margin: 40px auto;
 }
 
-h2 {
+section h2 {
   margin-left: 390px;
   text-align: center;
   font-size: 4vmin;
@@ -174,7 +174,7 @@ h2 {
           animation: slideIn 0.2s forwards;
 }
 
-h2 {
+section h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,32 +188,32 @@ h2 {
   letter-spacing: 2px;
 }
 
-h2:nth-child(1) {
+section h2:nth-child(1) {
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
 
-h2:nth-child(2) {
+section h2:nth-child(2) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-h2:nth-child(3) {
+section h2:nth-child(3) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
-h2:nth-child(4) {
+section h2:nth-child(4) {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
 
-h2:last-child {
+section h2:last-child {
   margin-right: 0;
 }
 
-h2::before,
-h2::after {
+section h2::before,
+section h2::after {
   content: "";
   position: absolute;
   width: 43%;
@@ -226,20 +226,20 @@ h2::after {
   transition: all 0.5s;
 }
 
-h2::before {
+section h2::before {
   top: 0;
   -webkit-transform-origin: left;
           transform-origin: left;
 }
 
-h2::after {
+section h2::after {
   bottom: 0;
   -webkit-transform-origin: right;
           transform-origin: right;
 }
 
-h2:hover::before,
-h2:hover::after {
+section h2:hover::before,
+section h2:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
@@ -549,6 +549,27 @@ h2 .yo span {
 
 .about .row .content a:hover {
   color: black;
+}
+
+@media only screen and (max-width: 729px) {
+  .image {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 30px;
+            flex: 1 30px;
+  }
+  img {
+    width: auto;
+    padding: 5px;
+  }
+  .content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 45rem;
+            flex: 1 45rem;
+    padding: 2rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .slogan-page {
